@@ -1,10 +1,10 @@
 package router
 
 import (
-	"pos-backend/internal/handlers"
-	"pos-backend/internal/middleware"
-	"pos-backend/internal/models"
-	"pos-backend/internal/services"
+	"pos-go/internal/handlers"
+	"pos-go/internal/middleware"
+	"pos-go/internal/models"
+	"pos-go/internal/services"
 
 	"github.com/gin-gonic/gin"
 )

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"pos-backend/internal/models"
-	"pos-backend/internal/services"
+	"pos-go/internal/models"
+	"pos-go/internal/services"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"

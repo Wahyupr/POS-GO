@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	"pos-backend/internal/services"
+	"pos-go/internal/services"
 
 	"github.com/gin-gonic/gin"
 )

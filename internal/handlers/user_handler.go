@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"pos-backend/internal/middleware"
-	"pos-backend/internal/models"
-	"pos-backend/internal/repository"
+	"pos-go/internal/middleware"
+	"pos-go/internal/models"
+	"pos-go/internal/repository"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"

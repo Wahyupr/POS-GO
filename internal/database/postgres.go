@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"pos-backend/internal/config"
-	"pos-backend/internal/models"
+	"pos-go/internal/config"
+	"pos-go/internal/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

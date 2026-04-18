@@ -3,12 +3,12 @@ package main
 import (
 	"log"
 
-	"pos-backend/internal/config"
-	"pos-backend/internal/database"
-	"pos-backend/internal/handlers"
-	"pos-backend/internal/repository"
-	"pos-backend/internal/router"
-	"pos-backend/internal/services"
+	"pos-go/internal/config"
+	"pos-go/internal/database"
+	"pos-go/internal/handlers"
+	"pos-go/internal/repository"
+	"pos-go/internal/router"
+	"pos-go/internal/services"
 )
 
 func main() {

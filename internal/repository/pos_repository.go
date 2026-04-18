@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"pos-backend/internal/models"
+	"pos-go/internal/models"
 
 	"github.com/google/uuid"
 	"gorm.io/gorm"

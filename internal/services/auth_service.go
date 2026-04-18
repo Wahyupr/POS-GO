@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"pos-backend/internal/config"
-	"pos-backend/internal/models"
-	"pos-backend/internal/repository"
+	"pos-go/internal/config"
+	"pos-go/internal/models"
+	"pos-go/internal/repository"
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"

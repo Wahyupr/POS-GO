@@ -4,10 +4,10 @@ import (
 	"errors"
 	"net/http"
 
-	"pos-backend/internal/middleware"
-	"pos-backend/internal/models"
-	"pos-backend/internal/repository"
-	"pos-backend/internal/services"
+	"pos-go/internal/middleware"
+	"pos-go/internal/models"
+	"pos-go/internal/repository"
+	"pos-go/internal/services"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"

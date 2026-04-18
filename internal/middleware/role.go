@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"pos-backend/internal/models"
+	"pos-go/internal/models"
 
 	"github.com/gin-gonic/gin"
 )

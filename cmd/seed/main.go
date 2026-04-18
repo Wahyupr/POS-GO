@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"pos-backend/internal/config"
-	"pos-backend/internal/database"
-	"pos-backend/internal/models"
+	"pos-go/internal/config"
+	"pos-go/internal/database"
+	"pos-go/internal/models"
 
 	"github.com/google/uuid"
 	"golang.org/x/crypto/bcrypt"

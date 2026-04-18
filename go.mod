@@ -1,4 +1,4 @@
-module pos-backend
+module pos-go
 
 go 1.20
 
