@@ -33,8 +33,14 @@ type Config struct {
 var App *Config
 
 func Load() {
-	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found, using environment variables")
+	envPath := os.Getenv("ENV_PATH")
+	if envPath == "" {
+		envPath = ".env"
+	}
+	if err := godotenv.Load(envPath); err != nil {
+		log.Printf("No .env file found at %s, using environment variables", envPath)
+	} else {
+		log.Printf("Loaded environment variables from %s", envPath)
 	}
 
 	accessExp, _ := strconv.Atoi(getEnv("JWT_ACCESS_EXP_MINUTES", "15"))
