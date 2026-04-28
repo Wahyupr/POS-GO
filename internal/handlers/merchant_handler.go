@@ -77,6 +77,7 @@ func (h *MerchantHandler) CreateProduct(c *gin.Context) {
 	}
 	var body struct {
 		Name      string               `json:"name"       binding:"required"`
+		Category  string               `json:"category"`
 		ImageURL  *string              `json:"image_url"`
 		Barcode   *string              `json:"barcode"`
 		Unit      models.ProductUnit   `json:"unit"       binding:"required"`
@@ -92,9 +93,13 @@ func (h *MerchantHandler) CreateProduct(c *gin.Context) {
 	if body.Status == "" {
 		body.Status = models.ProductActive
 	}
+	if body.Category == "" {
+		body.Category = "Lainnya"
+	}
 	p := &models.Product{
 		MerchantID: mid,
 		Name:       body.Name,
+		Category:   body.Category,
 		ImageURL:   body.ImageURL,
 		Barcode:    body.Barcode,
 		Unit:       body.Unit,
